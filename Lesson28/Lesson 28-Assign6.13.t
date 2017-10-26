@@ -1,9 +1,5 @@
-%Touque Assignment 6- Q13
-%I tried something and i dunno how to fix the errors... anyone help change up my program? and this looks too complicated too
-
 var new_word : string := ""
 var half: int
-
 var word : string
 var number: int :=0
 
