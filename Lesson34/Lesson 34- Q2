@@ -1,31 +1,31 @@
 %made it robust just cuz
 
 %function
-function isMultiple (number: int) :boolean
-	if number mod 7 = 0 then
-		result true
-	else
-		result false
-	end if
+function isMultiple (number : int) : boolean
+    if number mod 7 = 0 then
+        result true
+    else
+        result false
+    end if
 end isMultiple
 
 %main program
-var user_input: string
-var number1: int
-
-put "Enter a number: "..
-get user_input 
+var user_input : string
+var number1 : int
 
 loop
-	if strintok (user_input) then
-		number1 := strint (user_input)
-		exit when strintok (user-input)
-	else
-		put "You did not enter a number, please enter a number." 
-	end if
+    put "Enter a number: " ..
+    get user_input
+    
+    if strintok (user_input) then
+        number1 := strint (user_input)
+    else
+        put "You did not enter a number, please enter a number."
+    end if
+    exit when strintok (user_input)
 end loop
-if isMultiple(number1) then
-	put "Your number is a multiple of 7"
+if isMultiple (number1) then
+    put "Your number is a multiple of 7."
 else
-	put "Your number is not a multiple of 7."
+    put "Your number is not a multiple of 7."
 end if
