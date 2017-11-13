@@ -1,0 +1,18 @@
+%function
+function isS (word: string) :string
+	if word(1) = "S" and word = "s" then
+		result true
+	else 
+		result false
+	end if
+end isS
+
+%main program
+var user_input: string
+put "Enter a word: "..
+get user_input 
+if isS(user_input) then
+	put "Your word starts with s."
+else
+	put "Your word does not start with s."
+end if
