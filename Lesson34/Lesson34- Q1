@@ -1,5 +1,5 @@
 %function
-function isS (word: string) :string
+function isS (word: string) :boolean
 	if word(1) = "S" and word = "s" then
 		result true
 	else 
