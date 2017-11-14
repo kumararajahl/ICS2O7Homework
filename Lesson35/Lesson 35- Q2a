@@ -8,7 +8,4 @@ end stars
 %main program
 var line_number : int
 
-put "Enetr a number of lines: "..
-get line_number
-
-stars(line_number)
+stars(7)
