@@ -1,0 +1,14 @@
+%procedure (given)
+procedure stars(line_number : int)
+    for i : 1 .. line_number
+        put "*****"
+    end for
+end stars
+
+%main program
+var line_number : int
+
+put "Enetr a number of lines: "..
+get line_number
+
+stars(line_number)
