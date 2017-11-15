@@ -1,8 +1,0 @@
-%procedure
-procedure slant (num_lines: int)
-  for i: 1 .. num_lines
-
-  end for
-end slant
-
-%main function
