@@ -1,0 +1,45 @@
+%function #1
+function changeA (word : string) : string
+    var new_word : string := ""
+    for i : 1 .. length (word)
+        if word (i) not= "a" then
+            new_word += word (i)
+        else
+            new_word += "aa"
+        end if
+    end for
+    result new_word
+end changeA
+
+%function #2
+function replaceB (word : string) : string
+    var new_word : string := ""
+    for i : 1 .. length (word)
+        if word (i) not= "b" then
+            new_word += word (i)
+        else
+            new_word += "c"
+        end if
+    end for
+    result new_word
+end replaceB
+
+%function #3- c as first letter
+function addC (word : string) : string
+    var new_word : string := ""
+    new_word := "c" + word (1 .. *)
+    result new_word
+end addC
+
+%main program
+var word : string
+var new_word : string
+
+put "Enter a word: " ..
+get word
+
+new_word := changeA (word)
+new_word := replaceB (new_word)
+new_word := addC (new_word)
+
+put "The new word is ", new_word, "."
